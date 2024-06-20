@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat,roboto,sans-serif,arial;
+    /* font-size: 16px;
+    color: #242424; */
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: antiquewhite;
+}
+.header{
+    width: 100%;
+    background-color: #46b7c1;
+    padding: 1rem;
+}
+.container{
+    width: 80%;
+    margin: 0px auto;
+}
+
+.container marquee{
+    font-size: 1.5rem;
+    color: #fff;
+  
+    width: 80%;
+}
+
+.section2{
+    width: 100%;
+
+}
+
+
+
+.logo{
+    border-radius: 50%;
+    
+    
+}
+nav{
+    float: right;
+    margin-right:10% ;
+    padding: 2rem 0px;
+}
+.section1 .menu-btn span{
+
+    color: black;
+   
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+
+}
+.section1 img{
+    margin-left: 15%;
+}
+
+.section1 input{
+    display: none;
+}
+@media (max-width:870px){
+    .section1 .menu-btn span{
+        display: inline;
+        margin: 2% 10% 2% 40%;
+    }
+
+    .section1 img{
+        padding: 5px;
+        width: 60px;
+    }
+    .section1 nav{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #111;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    #click:checked ~ nav{
+        left: 0%;
+    }
+    .section1 nav a{
+        margin: 40px 0;
+        font-size: 20px;
+        display: block;
+        color: aliceblue;
+    }
+    .section1 nav a{
+        font-size: 1.5rem;
+        color: yellow;
+        border-radius: 10%;
+        background: none;
+    }
+    .container{
+        width: 90%;
+    }
+    marquee{
+        font-size: 1.2rem;
+    }
+
+
+}
+nav a{
+    width: 100%;
+        color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: .5rem;
+    margin-left: 1rem;
+    font-weight: 500;
+
+}
+.section1 a:hover{
+    width: 100%;
+    background-color: grey;
+    color: yellow;
+    border-radius: 5%;
+    font-size: 1.3rem;
+    padding: .5rem;
+
+} 
+.section3{
+    width: 100%;
+   
+}
+.aboutus{
+    margin: 3% 10%;
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px 10px grey;
+    border-radius: 5%;
+    
+    display: flex;
+    justify-content: center;
+
+}
+.section3 .image{
+    width: 70%;
+}
+.section3 .image img{
+   margin: 4% 30%;
+    width: 40%;
+   
+    border-radius: 2%;
+   
+}
+.section3 .about{
+    width: 100%;
+    
+}
+.about h1{
+    margin-top: 10%;
+}
+.about u{
+    font-size: 2rem;
+}
+.about p{
+    font-size: 1.3rem;
+    /* margin-right: 4%; */
+
+}
+@media (max-width:800px){
+    .section3 .aboutus{
+        width: 80%;
+        display: block;
+           
+    }
+    .aboutus{
+        width: 80%;
+    }
+    .aboutus .image{
+        width: 70%;
+        margin-left: 5%;
+    }
+    .aboutus img{
+        width: 10rem;
+    }
+   
+    .about u{
+        margin-left: 4%;
+        font-size: 1.3rem;
+    }
+    .about p{
+        font-size: 1rem;
+        margin: 5% 4%;
+    }
+
+
+    
+}
+.section4{
+    width: 100%;
+   
+    /* background-color: aqua; */
+    
+}
+.section4 u{
+    margin: 5% 10% 2% 30%;
+    font-size: 2rem;
+}
+.form{
+    
+    
+    margin: 5% 10% 8% 10%;
+    width: 80%;
+    background-color:rgb(255, 199, 192);
+    box-shadow: 10px 10px 10px 10px grey;
+    border-radius: 5%;
+}
+.form label{
+    font-size: 1.5rem;
+    margin-left: 5%;
+    padding-top: 20%;
+    
+}
+.form input{
+    outline: none;
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+    margin-left: 5%;
+    width: 80%;
+    border-bottom: #111;
+    border-radius: 5%;
+    
+}
+.form input[type=button]{
+    width: 20%;
+    height: 40px;
+    border-radius: 10%;
+    border: none;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    background-color: darkturquoise;
+}
+.form textarea{
+    font-size: 1.2rem;
+    margin-left: 5%;
+    width: 80%;
+    border-radius: 5%;
+
+}
+@media (max-width:800px) {
+    .section4 u{
+        font-size: 1.2rem;
+        margin-left: 4%;
+    }
+    .section4 .form{
+        width: 80%;
+        margin: 10%;
+    }
+    .section4 .form label{
+        font-size: 1rem;
+        padding-top: 10px;
+    }
+    .section4 .form input{
+        font-size: .8rem;
+    }
+    .section4 .form textarea{
+        font-size: .8rem;
+
+    }
+    .form input[type=button]{
+        width: 35%;
+        margin-bottom: 5%;
+        border: none;
+        border-radius: 10%;
+        color: white;
+        height: 25px;
+        background-color: lightskyblue;
+    }
+    
+}
+.footer{
+    width: 100%;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    
+}
+/* .part{
+    width: 100%;
+    display: flex;
+   
+}
+.part .class{
+    width: 100%;
+       margin-top: 2rem;
+
+
+}
+.part .class li{
+    
+}
+.part li{
+    padding: 5px;
+}
+.part .subject{
+    width: 100%;
+    margin: 3rem;
+    
+    padding-top: 5px;
+}
+.part .cont{
+    margin-top: 3rem;
+    width: 100%;
+    text-align: center;
+
+} */
+@media (max-width:800px) {
+    .footer h2{
+        
+        font-size: 1rem;
+    }
+    .footer h3{
+        
+        font-size: .9rem;
+    }
+    
+    
+    
+}
+
+
